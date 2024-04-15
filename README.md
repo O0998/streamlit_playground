@@ -1,7 +1,7 @@
 # Build my first App with GPT
 
 Colab notebook
-[https://colab.research.google.com/drive/1qpIFsgSEv-x-yqfLFJk3uRg2ZEEJ56Hy?usp=sharing](https://colab.research.google.com/drive/1qpIFsgSEv-x-yqfLFJk3uRg2ZEEJ56Hy?usp=sharing)
+[https://colab.research.google.com/drive/1ugGXjcbGKiO_0WFbY_tqC0-ng5jn16AX?usp=sharing](https://colab.research.google.com/drive/1ugGXjcbGKiO_0WFbY_tqC0-ng5jn16AX?usp=sharing)
 
 
 ## OpenAI Account
