@@ -2,7 +2,7 @@ __import__('pysqlite3')
 import sys
 sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import streamlit as st
-from langchain.llms import OpenAI
+from langchain_openai import ChatOpenAI
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
@@ -31,7 +31,7 @@ def generate_response_pdf(uploaded_file, openai_api_key, query_text):
     # Create retriever interface
     retriever = db.as_retriever()
     # Create QA chain
-    qa = RetrievalQA.from_chain_type(llm=OpenAI(openai_api_key=openai_api_key, model="gpt-3.5-turbo-16k"), chain_type='stuff', retriever=retriever)
+    qa = RetrievalQA.from_chain_type(llm=ChatOpenAI(openai_api_key=openai_api_key, model="gpt-3.5-turbo-16k"), chain_type='stuff', retriever=retriever)
     return qa.run(query_text)
 
 # Page title
